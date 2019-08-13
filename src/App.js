@@ -7,19 +7,28 @@ import Smoke from './Rocket/Smoke'
 import Grid from './Grid/Grid'
 import Griditm from './Grid/Griditem'
 
+import facts from './NASA_facts.json'
 
-function App() {
-  return (
-    <div className={styles.app}>
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      facts
+    }
+  }
 
-      <Title />
-      <Background />
-      <Grid />
-      <Griditm />
-      <Rocket />
-      <Smoke />
+  render () {
+    return (
+      <div className={styles.app}>
+        <Title />
+        <Background />
+        <Grid facts={this.state.facts} />
+        <Griditm />
+        <Rocket />
+        <Smoke />
     </div>
-  );
+    )
+  }
 }
 
 export default App;
