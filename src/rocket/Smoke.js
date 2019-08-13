@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Background extends Component {
+export default class Smoke extends Component {
     render() {
         return (
             <div>
-                Background
+                Smoke
             </div>
         )
     }
