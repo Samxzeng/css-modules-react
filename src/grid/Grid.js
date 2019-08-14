@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Griditem from './Griditem'
 import styles from './Grid.module.css'
+import mediaStyles from './Media.module.css'
+import cx from 'classnames'
 
 export default class Grid extends Component {
 
@@ -12,7 +14,7 @@ export default class Grid extends Component {
 
     render() {
         return (
-            <section className={styles.grid}>
+            <section className={cx(styles.grid, mediaStyles.grid)}>
                {this.renderFacts()}
             </section>
         )
