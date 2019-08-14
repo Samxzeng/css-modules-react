@@ -3,8 +3,8 @@ import styles from './Title.module.css'
 
 const Title = () => {
     return (
-        <div className={styles.title}> 
-            Title
+        <div> 
+            <h1 className={styles.title}>NASA facts</h1>
         </div>
     )
 }
