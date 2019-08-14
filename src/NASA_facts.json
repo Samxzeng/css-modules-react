@@ -1,5 +1,4 @@
-[
-    {
+[{
         "id": 0,
         "title": "NASA Acronym",
         "fact": "The acronym 'NASA' stands for National Aeronautics and Space Administration.",
@@ -69,5 +68,4 @@
         "id": 11,
         "title": "Cirrus",
         "fact": "In 1803, a man named Luke Howard used Latin words to categorize clouds. Cirrus, which means 'curl of hair,' is used to describe high, wispy clouds that look like locks of hair."
-    }
-]
+    }]

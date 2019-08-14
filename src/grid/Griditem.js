@@ -1,11 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
+import styles from './Griditem.module.css'
 
-export default class Griditem extends Component {
-    render() {
-        return (
-            <div>
-                Griditem
-            </div>
-        )
-    }
+const  Griditem = (props) => {
+    console.log('griditem',props)
+    return (
+        <div className={styles.card}>
+            <h2 className={styles.title}>{props.fact.title}</h2>
+            <article className={styles.fact}>{props.fact.fact}</article>
+        </div>
+    )
 }
+
+export default Griditem;
+
+
+

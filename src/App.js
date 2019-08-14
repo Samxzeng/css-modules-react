@@ -5,25 +5,24 @@ import Background from './Background/Background'
 import Rocket from './Rocket/Rocket'
 import Smoke from './Rocket/Smoke'
 import Grid from './Grid/Grid'
-import Griditm from './Grid/Griditem'
 
-import facts from './NASA_facts.json'
+import Facts from './NASA_facts.json'
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      facts
+      facts:Facts
     }
   }
 
   render () {
+    console.log("facts",Facts)
     return (
       <div className={styles.app}>
         <Title />
         <Background />
         <Grid facts={this.state.facts} />
-        <Griditm />
         <Rocket />
         <Smoke />
     </div>
