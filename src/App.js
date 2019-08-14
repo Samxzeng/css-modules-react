@@ -16,13 +16,19 @@ class App extends React.Component {
     }
   }
 
+  updateClicked = id => {
+    let stateCopy = Object.assign({},this.state)
+    stateCopy.facts[id].clicked = true;
+    this.setState(stateCopy)
+  }
+
   render () {
     console.log("facts",Facts)
     return (
       <div className={styles.app}>
         <Title />
         <Background />
-        <Grid facts={this.state.facts} />
+        <Grid facts={this.state.facts} updateClicked={this.updateClicked} />
         <Rocket />
         <Smoke />
     </div>
